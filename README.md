@@ -1,67 +1,57 @@
-# 🚀 Portfolio Landing Page
+# NexaTech Landing Page 🚀
 
-A modern, beautiful React + Vite landing page for your developer portfolio.
+A modern, responsive landing page built with **React + Vite**. Showcases professional web development with smooth animations, dark footer, testimonials slider, animated stats counter, and a contact form.
 
-## ✨ Features
-
-- ⚡ **React 18 + Vite** — blazing fast builds
-- 🎨 **Modern Dark Design** — glassmorphism, gradients, animated orbs
-- 📱 **Fully Responsive** — mobile-first, works on all screen sizes
-- 🌟 **Smooth Animations** — CSS keyframes, floating elements, count-up stats
-- 🧩 **6 Complete Sections** — Hero, Services, Stats, Projects, Testimonials, Contact
-- 🔘 **Interactive Filter** — filter projects by category
-- 📬 **Contact Form** — with validation and success state
-- 🎯 **Zero Dependencies** beyond React and Vite
+## 🛠 Tech Stack
+- **React 18** — Component-based UI
+- **Vite 5** — Lightning-fast build tool
+- **CSS Modules** — Scoped styling per component
+- **No extra libraries** — Pure React + CSS animations
 
 ## 📁 Project Structure
-
 ```
-portfolio-landing/
-├── index.html
-├── package.json
-├── vite.config.js
-├── public/
-│   └── favicon.svg
+nexatech-landing/
+├── index.html          # HTML entry point
+├── vite.config.js      # Vite configuration
+├── package.json        # Dependencies
+├── vercel.json         # Vercel deployment config
 └── src/
-    ├── main.jsx
-    ├── App.jsx
-    ├── App.css
-    ├── index.css          ← global styles & utilities
-    └── components/
-        ├── Navbar.jsx / .css
-        ├── Hero.jsx / .css
-        ├── Features.jsx / .css
-        ├── Stats.jsx / .css
-        ├── Projects.jsx / .css
-        ├── Testimonials.jsx / .css
-        ├── Contact.jsx / .css
-        └── Footer.jsx / .css
+    ├── main.jsx        # React entry
+    ├── App.jsx         # Root component
+    ├── index.css       # Global styles & variables
+    ├── Navbar.jsx/css  # Sticky navigation
+    ├── Hero.jsx/css    # Hero section with animations
+    ├── Features.jsx/css # 6-card feature grid
+    ├── Services.jsx/css # Services list
+    ├── Stats.jsx/css   # Animated counters
+    ├── Testimonials.jsx/css # Auto-rotating slider
+    ├── Contact.jsx/css # Contact form
+    └── Footer.jsx/css  # Footer with newsletter
 ```
 
 ## 🚀 Deploy to Vercel (No npm needed on your device!)
 
-1. **Upload to GitHub**
-   - Create a new repo on github.com
-   - Upload all the files (drag & drop or GitHub web editor)
-   - Commit the changes
+### Step 1 – Upload to GitHub
+1. Go to [github.com](https://github.com) → **New Repository**
+2. Name it `nexatech-landing`, make it **Public**
+3. Click **"uploading an existing file"**
+4. Upload ALL files (drag & drop the folder contents)
+5. Commit changes
 
-2. **Deploy to Vercel**
-   - Go to [vercel.com](https://vercel.com)
-   - Click **"New Project"**
-   - Import your GitHub repository
-   - Vercel auto-detects Vite — just click **"Deploy"**
-   - ✅ Done! Your site is live!
+### Step 2 – Deploy on Vercel
+1. Go to [vercel.com](https://vercel.com) → Sign in with GitHub
+2. Click **"Add New Project"**
+3. Import your `nexatech-landing` repo
+4. Framework: **Vite** (auto-detected)
+5. Build Command: `npm run build`
+6. Output Directory: `dist`
+7. Click **Deploy** — Vercel handles everything!
 
-## 🎨 Customization
+## ✏️ Customize
+- Update brand name in `Navbar.jsx` and `Footer.jsx`
+- Change colors in `src/index.css` (`:root` variables)
+- Update content in each component file
+- Add real contact form via [Formspree](https://formspree.io) or [EmailJS](https://emailjs.com)
 
-Edit these files to personalize:
-- `src/components/Hero.jsx` — your name, bio, tech stack
-- `src/components/Projects.jsx` — your real projects
-- `src/components/Testimonials.jsx` — real client reviews
-- `src/components/Contact.jsx` — your email & location
-- `src/components/Footer.jsx` — your social links
-- `src/index.css` — change `:root` CSS variables for colors
-
----
-
-Built with ❤️ using React + Vite | Deployed on Vercel
+## 📄 License
+MIT — Free to use for personal and commercial projects.
