@@ -1,0 +1,212 @@
+.footer {
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, transparent 0%, rgba(124,58,237,0.03) 100%);
+  margin-top: 0;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding: 80px 24px 64px;
+}
+
+/* Brand */
+.footer__brand {}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.footer__logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, rgba(124,58,237,0.2), rgba(6,182,212,0.2));
+  border: 1px solid rgba(124,58,237,0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__tagline {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 260px;
+}
+
+/* Socials */
+.footer__socials {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.footer__social {
+  width: 36px;
+  height: 36px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+}
+
+.footer__social:hover {
+  background: rgba(124,58,237,0.1);
+  border-color: rgba(124,58,237,0.3);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+/* Newsletter */
+.footer__newsletter-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer__newsletter-form {
+  display: flex;
+  gap: 0;
+}
+
+.footer__newsletter-input {
+  flex: 1;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-right: none;
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.82rem;
+  font-family: var(--font-primary);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.footer__newsletter-input:focus {
+  border-color: rgba(124,58,237,0.4);
+  background: rgba(124,58,237,0.05);
+}
+
+.footer__newsletter-input::placeholder {
+  color: var(--text-muted);
+}
+
+.footer__newsletter-btn {
+  padding: 10px 14px;
+  background: var(--gradient-1);
+  color: #fff;
+  border: none;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footer__newsletter-btn:hover { opacity: 0.85; }
+
+/* Columns */
+.footer__column {}
+
+.footer__column-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__link {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: var(--text-primary);
+}
+
+/* Bottom */
+.footer__bottom {
+  border-top: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer__bottom-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__badge {
+  padding: 4px 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__top {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 48px 16px 40px;
+  }
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
